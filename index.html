@@ -9,8 +9,10 @@
   <meta content="" name="farhan, farhan perdana, black_claw, blek, zappytanx, icer0x, blaxnux">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.gif" rel="icon" type="image/gif">
-  <link href="assets/img/favicon.gif" rel="apple-touch-icon">
+  <link href="assets/img/favicon.gif?v=2" rel="icon" type="image/gif">
+  <link href="assets/img/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+  <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -38,6 +40,7 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li> 
+        <li><a href="#linux-keyboard-patcher"><i class="bi bi-keyboard navicon"></i><span>Linux Keyboard<br>Patcher</span></a></li>
         <!-- <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li> 
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li> 
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li> -->
@@ -279,7 +282,7 @@
               <h4>Kalau lagi gabut, </h4>
               <h5>saya suka nyampah di Tiktok.</h5>
               <p><em><a href="https://www.tiktok.com/@zappytanx">https://www.tiktok.com/@zappytanx</a></em></p>
-              <p><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@zappytanx" data-unique-id="zappytanx" data-embed-from="embed_page" data-embed-type="creator" style="max-width:780px; min-width:288px;"> <section> <a target="_blank" href="https://www.tiktok.com/@zappytanx?refer=creator_embed">@zappytanx</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script></p>
+              <p><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@zappytanx" data-unique-id="zappytanx" data-embed-from="embed_page" data-embed-type="creator" style="max-width:780px; min-width:288px;"> <section> <a target="_blank" href="https://www.tiktok.com/@zappytanx?refer=creator_embed">@zappytanx</a> </section> </blockquote></p>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
@@ -299,6 +302,8 @@
               <p><em>Iya, pake wordpress. Dari zaman kuda gigit besi. </em></p>
               <ul>
                 <li><script src="https://rss.bloople.net/?url=https%3A%2F%2Fblackclaw.wordpress.com%2Ffeed%2F&detail=50&limit=6&showtitle=false&type=js"></script></li>
+              </ul>
+              <script async src="https://www.tiktok.com/embed.js"></script>
                 <!-- Edn Resume Item -->
 
           </div>
@@ -309,6 +314,70 @@
 
     </section><!-- /Resume Section -->
 
+    <!-- Linux Keyboard Patcher Section -->
+    <section id="linux-keyboard-patcher" class="linux-keyboard-patcher section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Linux Keyboard Patcher</h2>
+        <p id="linux-keyboard-patcher-summary-id" lang="id">Saya sering nemu laptop yang di Windows keyboardnya normal. Pas booting Linux, keyboardnya cuma bisa dipake pas GRUB. Setelah GRUB dan mulai booting Linux sampai masuk ke Desktop, keyboardnya nggak bisa dipake. Nih fixnya. Pake aja. Gratis.</p>
+        <p id="linux-keyboard-patcher-summary-en" lang="en" hidden>I often come across laptops whose keyboards work fine in Windows. When booting Linux, the keyboard only works in GRUB. After GRUB, as Linux boots and reaches the desktop, the keyboard stops working. Here's the fix. Give it a try. It's free.</p>
+        <button id="linux-keyboard-patcher-language-toggle" class="btn btn-primary" type="button" aria-controls="linux-keyboard-patcher-summary-id linux-keyboard-patcher-summary-en linux-keyboard-patcher-guide-id linux-keyboard-patcher-guide-en" aria-pressed="false">WTF Dude, I can't speak Indonesian.</button>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div id="linux-keyboard-patcher-guide-id" lang="id">
+          <h3>Panduan singkat</h3>
+          <p>Install dulu distro Linuxnya. Gunakan keyboard external, atau gunakan VIrtual Keyboard bawaan distromu. Kemudian, install paket yang sesuai dengan distromu, build sendiri dari source, atau jalankan saja binarynya dengan chmod +x. Aplikasi ini bisa dijalankan lewat terminal, atau via gui. Setelah aplikasi ini dijalankan pertama kali, aplikasi ini akan melakukan patching pada GRUBmu. Restart, dan di menu pilihan GRUB saat booting, coba aja GRUB entry mana yang bisa membuat keyboardmu jalan setelah selesai booting dan masuk ke Desktop. Kalau sudah ketemu entry yang sesuai, ingat entrynya, kemudian jalankan lagi aplikasinya. Pilih entry yang bisa membuat keyboardmu berfungsi, kemudian jadikan permanen.</p>
+        </div>
+        <div id="linux-keyboard-patcher-guide-en" lang="en" hidden>
+          <h3>Quick guide</h3>
+          <p>First, install your Linux distro. Use an external keyboard, or your distro's built-in virtual keyboard. Then install the package for your distro, build it from source, or simply make the binary executable with <code>chmod +x</code>. You can run the application from the terminal or through a GUI. The first time you run it, the application will patch your GRUB configuration. Restart, then try the available GRUB entries to find one that lets your keyboard work after Linux boots to the desktop. Once you find the right entry, note it down and run the application again. Select the entry that makes your keyboard work, then make it permanent.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <h3>Standalone binaries</h3>
+            <ul>
+              <li><a href="https://raw.githubusercontent.com/icer0x/linux-keyboard-patcher/main/releases/1.0/binaries/linux-keyboard-patcher">64-bit x86_64 binary</a></li>
+              <li><a href="https://raw.githubusercontent.com/icer0x/linux-keyboard-patcher/main/releases/1.0/binaries/linux-keyboard-patcher-i386">32-bit i386 binary</a></li>
+            </ul>
+
+            <h3>Debian packages</h3>
+            <ul>
+              <li><a href="https://raw.githubusercontent.com/icer0x/linux-keyboard-patcher/main/releases/1.0/deb/linux-keyboard-patcher_1.0-8_amd64.deb">64-bit amd64 .deb</a></li>
+              <li><a href="https://raw.githubusercontent.com/icer0x/linux-keyboard-patcher/main/releases/1.0/deb/linux-keyboard-patcher_1.0-8_i386.deb">32-bit i386 .deb</a></li>
+            </ul>
+
+            <h3>RPM packages</h3>
+            <ul>
+              <li><a href="https://raw.githubusercontent.com/icer0x/linux-keyboard-patcher/main/releases/1.0/rpm/linux-keyboard-patcher-1.0-5.x86_64.rpm">64-bit x86_64 .rpm</a></li>
+              <li><a href="https://raw.githubusercontent.com/icer0x/linux-keyboard-patcher/main/releases/1.0/rpm/linux-keyboard-patcher-1.0-5.i686.rpm">32-bit i686 .rpm</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6">
+            <h3>Source code and RPM build files</h3>
+            <ul>
+              <li><a href="https://raw.githubusercontent.com/icer0x/linux-keyboard-patcher/main/releases/1.0/source/linux-keyboard-patcher-source-1.0.tar.gz">Complete source code tarball</a></li>
+              <li><a href="https://raw.githubusercontent.com/icer0x/linux-keyboard-patcher/main/releases/1.0/rpm/sources/linux-keyboard-patcher-1.0-x86_64.tar.gz">RPM build source archive — x86_64</a></li>
+              <li><a href="https://raw.githubusercontent.com/icer0x/linux-keyboard-patcher/main/releases/1.0/rpm/sources/linux-keyboard-patcher-1.0-i686.tar.gz">RPM build source archive — i686</a></li>
+              <li><a href="https://raw.githubusercontent.com/icer0x/linux-keyboard-patcher/main/releases/1.0/rpm/linux-keyboard-patcher.spec">RPM spec file</a></li>
+            </ul>
+
+            <h3>Portable tarballs</h3>
+            <ul>
+              <li><a href="https://raw.githubusercontent.com/icer0x/linux-keyboard-patcher/main/releases/1.0/tarball/linux-keyboard-patcher-1.0-x86_64.tgz">64-bit x86_64 .tgz</a></li>
+              <li><a href="https://raw.githubusercontent.com/icer0x/linux-keyboard-patcher/main/releases/1.0/tarball/linux-keyboard-patcher-1.0-i386.tgz">32-bit i386 .tgz</a></li>
+            </ul>
+
+            <h3>Checksums and release page</h3>
+            <ul>
+              <li><a href="https://raw.githubusercontent.com/icer0x/linux-keyboard-patcher/main/releases/1.0/SHA256SUMS">SHA256 checksums</a></li>
+              <li><a href="https://github.com/icer0x/linux-keyboard-patcher/tree/main/releases/1.0">Browse the release folder on GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Linux Keyboard Patcher Section -->
 
 
   

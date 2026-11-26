@@ -50,9 +50,9 @@
    */
   const preloader = document.querySelector('#preloader');
   if (preloader) {
-    window.addEventListener('load', () => {
+    document.addEventListener('DOMContentLoaded', () => {
       preloader.remove();
-    });
+    }, { once: true });
   }
 
   /**
@@ -73,7 +73,7 @@
     });
   });
 
-  window.addEventListener('load', toggleScrollTop);
+  document.addEventListener('DOMContentLoaded', toggleScrollTop, { once: true });
   document.addEventListener('scroll', toggleScrollTop);
 
   /**
@@ -87,7 +87,7 @@
       mirror: false
     });
   }
-  window.addEventListener('load', aosInit);
+  document.addEventListener('DOMContentLoaded', aosInit, { once: true });
 
   /**
    * Init typed.js
@@ -127,10 +127,30 @@
     });
   });
 
+  const patcherLanguageToggle = document.querySelector('#linux-keyboard-patcher-language-toggle');
+  const patcherSummaryId = document.querySelector('#linux-keyboard-patcher-summary-id');
+  const patcherSummaryEn = document.querySelector('#linux-keyboard-patcher-summary-en');
+  const patcherGuideId = document.querySelector('#linux-keyboard-patcher-guide-id');
+  const patcherGuideEn = document.querySelector('#linux-keyboard-patcher-guide-en');
+
+  if (patcherLanguageToggle && patcherSummaryId && patcherSummaryEn && patcherGuideId && patcherGuideEn) {
+    patcherLanguageToggle.addEventListener('click', () => {
+      const showEnglish = patcherSummaryEn.hidden;
+      patcherSummaryId.hidden = showEnglish;
+      patcherSummaryEn.hidden = !showEnglish;
+      patcherGuideId.hidden = showEnglish;
+      patcherGuideEn.hidden = !showEnglish;
+      patcherLanguageToggle.textContent = showEnglish
+        ? 'Kakeknya bapak gebetanku orang Indonesia, kok.'
+        : "WTF Dude, I can't speak Indonesian.";
+      patcherLanguageToggle.setAttribute('aria-pressed', String(showEnglish));
+    });
+  }
+
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-  window.addEventListener('load', function(e) {
+  document.addEventListener('DOMContentLoaded', function() {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
         setTimeout(() => {
@@ -143,7 +163,7 @@
         }, 100);
       }
     }
-  });
+  }, { once: true });
 
   /**
    * Navmenu Scrollspy
@@ -164,7 +184,7 @@
       }
     })
   }
-  window.addEventListener('load', navmenuScrollspy);
+  document.addEventListener('DOMContentLoaded', navmenuScrollspy, { once: true });
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();

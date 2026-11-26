@@ -159,9 +159,9 @@ h6 {
 
 @media (max-width: 1199px) {
   .header {
-    background-color: var(--background-color);
+    background-color: rgba(0, 0, 0, 0.3);
     border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    width: 300px;
+    width: 230px;
     left: -100%;
   }
 }
@@ -219,6 +219,18 @@ h6 {
   width: 140px;
 }
 
+@media (max-width: 1199px) {
+  .navmenu ul {
+    width: 200px;
+  }
+}
+
+.navmenu a[href="#linux-keyboard-patcher"] span {
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
 .navmenu a,
 .navmenu a:focus {
   color: var(--nav-color);
@@ -229,7 +241,7 @@ h6 {
   margin-bottom: 8px;
   font-size: 15px;
   border-radius: 50px;
-  background: color-mix(in srgb, var(--default-color), transparent 92%);
+  background: var(--surface-color);
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -246,7 +258,7 @@ h6 {
   padding: 0 5px 0 7px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 
   .navmenu a,
   .navmenu a:focus {
@@ -276,6 +288,14 @@ h6 {
 .navmenu a:hover span,
 .navmenu li:hover>a span {
   display: block;
+}
+
+@media (min-width: 1200px) {
+  .navmenu a[href="#linux-keyboard-patcher"]:hover,
+  .navmenu li:hover>a[href="#linux-keyboard-patcher"] {
+    width: 180px;
+    max-width: 180px;
+  }
 }
 
 /*--------------------------------------------------------------
